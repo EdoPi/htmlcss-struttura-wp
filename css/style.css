@@ -14,7 +14,8 @@ clear: both;
 .container {
   width: 1200px;
   margin: 0 auto;
-  background: #ccc;
+  /*   background: #ccc;  */
+
 
 }
 
@@ -29,7 +30,9 @@ background-color:yellow;
  float: left;
 }
 
-
+.main{
+  margin-top: 20px
+}
 .box1{
   width: 25%;
   height: 300px;
@@ -39,9 +42,10 @@ background-color:yellow;
 
 
 .box2{
-  width: 50%;
+  width: calc(50% - 20px);
   height: 400px;
   background-color: violet;
+  margin:0 10px;
 
 }
 
@@ -50,13 +54,30 @@ background-color:yellow;
 .box3{
   width: 25%;
   height: 500px;
-  background-color: pink;
+  background-color: #fff;
 
 }
 
 
 footer{
+  margin-top: 30px;
   height: 100px;
   background-color: green;
 
+}
+
+.sidebar-container .sidebar-box:first-child{
+
+  height: 250px;
+  background-color: orange;
+  border: 2px solid black;
+
+}
+
+.sidebar-container .sidebar-box:nth-child(2){
+
+  height: 250px;
+  background-color: blue;
+  margin-top:  10px;
+  border: 2px solid black;
 }
